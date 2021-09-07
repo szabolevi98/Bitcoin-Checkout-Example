@@ -1,5 +1,5 @@
 <?php
-	// Bitcoin Checkout Example code in PHP
+	// Bitcoin Checkout Example PHP Code
 	// https://github.com/szabolevi98/bitcoin-checkout-example
 	ini_set("allow_url_fopen", true);
 	$myAddress = "PUTHEREYOURADDRESSTORECEIVE";
