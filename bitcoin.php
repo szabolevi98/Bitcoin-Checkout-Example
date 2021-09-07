@@ -13,7 +13,7 @@
 		if (empty($hashName)) {
 			echo "<script>alert('What are you doing?')</script>";
 		} else {
-			$check = mysqli_query($sqlConn, "SELECT * FROM bitcoin_log WHERE transaction='$hashName'");
+			$check = mysqli_query($sqlConn, "SELECT * FROM bitcoin_log WHERE transaction='$hashName';");
 			if (mysqli_num_rows($check)==0) {
 				$received = file_get_contents("https://blockchain.info/q/txresult/$hashName/$myAddress");
 				if ($received) {
