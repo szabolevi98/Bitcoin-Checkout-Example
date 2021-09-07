@@ -17,7 +17,7 @@
 			if (mysqli_num_rows($check)==0) {
 				$received = file_get_contents("https://blockchain.info/q/txresult/$hashName/$myAddress");
 				if ($received) {
-					if ($received >= ($recvSatoshi*0.95)) { //Let them 5% difference because BTC price constantly changing, but you can remove this...
+					if ($received >= ($recvSatoshi*0.95)) { //Let them 5% difference because BTC price constantly changing, but you can edit this...
 						$confStr = file_get_contents("https://blockchain.info/tx/$hashName?show_adv=false&format=json");
 						$confJson = json_decode($confStr, true);
 						$blockHeight = $confJson['block_height'];
