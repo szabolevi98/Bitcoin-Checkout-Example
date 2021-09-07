@@ -55,7 +55,7 @@
 <body>
 	<div id="container">
 		<h2>Bitcoin Checkout Example</h2>
-		<span>Please send <b><?php echo $recvSatoshi/100000000 ?></b> BTC to <b><?php echo $myAddress ?></b>
+		<span>Please send <b><?php echo $recvBTC ?></b> BTC to <b><?php echo $myAddress ?></b>
 		<br>Then add below the transaction hash id to get your order:</span>
 		<form action="" method="post">
 			<input type="text" name="hashName" id="hashName" placeholder="Transaction hash id" required>
