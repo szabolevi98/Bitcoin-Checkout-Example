@@ -4,7 +4,7 @@
 	ini_set("allow_url_fopen", true);
 	$myAddress = "PUTHEREYOURADDRESSTORECEIVE";
 	$euro = 30;
-	$recvBTC = file_get_contents("https://blockchain.info/tobtc?currency=EUR&value=$euro"); //You can change to USD too
+	$recvBTC = file_get_contents("https://blockchain.info/tobtc?currency=EUR&value=$euro"); //You can change to USD
 	$recvSatoshi = $recvBTC*100000000;
 	$requiredConfirm = 3;
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
