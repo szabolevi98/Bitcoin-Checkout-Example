@@ -21,8 +21,7 @@
 						$confStr = file_get_contents("https://blockchain.info/tx/$hashName?show_adv=false&format=json");
 						$confJson = json_decode($confStr, true);
 						$blockHeight = $confJson['block_height'];
-						if ($blockHeight && is_numeric($blockHeight))
-						{
+						if ($blockHeight && is_numeric($blockHeight)) {
 							$currentCount = file_get_contents("https://blockchain.info/q/getblockcount");
 							$confirmation = $currentCount - $blockHeight+1;
 							if ($confirmation >= $requiredConfirm) {
@@ -38,7 +37,6 @@
 					} else {
 						echo "<script>alert('Transaction exists, but you sent low amount. Please email us.')</script>";
 					}
-
 				} else {
 					echo "<script>alert('Transaction does not exist!')</script>";
 				}
