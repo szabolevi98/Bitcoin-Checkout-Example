@@ -1,2 +1,3 @@
 # Bitcoin-Checkout-Example
-Check if bitcoin transaction exists with the required confirmation via blockchain.info public api.
+![Screenshot](screenshot.png?raw=true "Bitcoin-Checkout-Example")  
+An example Bitcoin Payment Checkout using the **blockchain.info** public api.
