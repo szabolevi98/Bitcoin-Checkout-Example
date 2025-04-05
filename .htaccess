@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteBase /Bitcoin-Checkout-Example/
+RewriteRule ^(controllers|models|views)(/|$) - [R=404,L]
+
+Options -Indexes
